@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Welcome to see the another Example of Asynchronous Javascript</h1>
+        <p><b>What is Asynchronous Javascript?</b>Funtion running in parallel with other functions are called asynchronous Javascript</p>
+        <h3>Here is the Example using SetInterval</h3>
+        <p id="demo"><b>ready to see the magic</b></p>
+        <h2>this can also be used to make a clock</h2>
+
+
+
+        <script>
+            setInterval(myfunction,5000);
+            function myfunction(){
+                let d= new Date();
+                document.getElementById("demo").innerHTML= d.getSeconds()+" (This is showing after every 5 secs)";
+            }
+        </script>
+    </body>
+</html>
